@@ -7,8 +7,8 @@ import streamlit as st
 from streamlit import session_state as state
 
 st.markdown("""
-<h1 style="display: flex; align-items: center; background-color: yellow; color: royalblue; padding: 10px;">
-<img src="https://logos-world.net/flipkart-logo/" style="width: 75px; height:75px; margin-right:10px;"> Flipkart Scraper
+<h1 style="display: flex; align-items: center; background-color: #f8e831; color: #047bd5; padding: 10px;">
+<img src="https://www.freepnglogos.com/uploads/flipkart-logo-png/flipkart-inventory-management-system-zap-inventory-1.png" style="width: 65px; height:65px; margin-right:10px;"> Flipkart Scraper
 </h1>
 """, unsafe_allow_html=True)
 
