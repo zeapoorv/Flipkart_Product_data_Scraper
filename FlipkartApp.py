@@ -10,7 +10,7 @@ from streamlit import session_state as state
 st.markdown("""
 <style>
     body {
-          background-image: url("https://cdn4.vectorstock.com/i/1000x1000/03/68/shopping-icons-seamless-background-pattern-vector-5090368.jpg");
+          background-image: url("bg.png");
           background-repeat: no-repeat;
           background-size: cover;
          }
