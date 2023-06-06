@@ -6,7 +6,7 @@ from urllib.parse import urlparse, parse_qs
 import streamlit as st
 from streamlit import session_state as state
 
- st.markdown(
+st.markdown(
     """
     <style>
     .reportview-container {
