@@ -6,22 +6,15 @@ from urllib.parse import urlparse, parse_qs
 import streamlit as st
 from streamlit import session_state as state
 
-main_bg = "https://cdn4.vectorstock.com/i/1000x1000/03/68/shopping-icons-seamless-background-pattern-vector-5090368.jpg"
-main_bg_ext = "png"
 
-side_bg = "https://cdn4.vectorstock.com/i/1000x1000/03/68/shopping-icons-seamless-background-pattern-vector-5090368.jpg"
-side_bg_ext = "png"
-
-st.markdown(
-f"""
-    <style>
-    .reportview-container {{
-        background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()})
-    }}
-   .sidebar .sidebar-content {{
-        background: url(data:image/{side_bg_ext};base64,{base64.b64encode(open(side_bg, "rb").read()).decode()})
-    }}
-    </style>
+st.markdown("""
+<style>
+    body {
+          background-image: url("https://cdn4.vectorstock.com/i/1000x1000/03/68/shopping-icons-seamless-background-pattern-vector-5090368.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+         }
+</style>
     
 <h1 style="display: flex; align-tems: center; justify-content: center; background-color: #F3F3DD; color: #047bd5; text-align: center; padding: 50px;">
 <img src="https://www.freepnglogos.com/uploads/flipkart-logo-png/flipkart-inventory-management-system-zap-inventory-1.png" style="width: 60px; height:60px; margin-right:10px;"> Flipkart Scraper
