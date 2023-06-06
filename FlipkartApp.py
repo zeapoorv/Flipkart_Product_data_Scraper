@@ -6,6 +6,21 @@ from urllib.parse import urlparse, parse_qs
 import streamlit as st
 from streamlit import session_state as state
 
+ st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: url("https://thoughtoverdesign.com/wp-content/uploads/2017/12/flipkart_section7right.jpg")
+    }
+   .sidebar .sidebar-content {
+        background: url("https://thoughtoverdesign.com/wp-content/uploads/2017/12/flipkart_section7right.jpg")
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
 st.markdown("""
 <h1 style="display: flex; align-tems: center; justify-content: center; background-color: #F3F3DD; color: #047bd5; text-align: center; padding: 50px;">
 <img src="https://www.freepnglogos.com/uploads/flipkart-logo-png/flipkart-inventory-management-system-zap-inventory-1.png" style="width: 60px; height:60px; margin-right:10px;"> Flipkart Scraper
