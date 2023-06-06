@@ -6,10 +6,10 @@ from urllib.parse import urlparse, parse_qs
 import streamlit as st
 from streamlit import session_state as state
 
-main_bg = "bg.png"
+main_bg = "https://cdn4.vectorstock.com/i/1000x1000/03/68/shopping-icons-seamless-background-pattern-vector-5090368.jpg"
 main_bg_ext = "png"
 
-side_bg = "bg.png"
+side_bg = "https://cdn4.vectorstock.com/i/1000x1000/03/68/shopping-icons-seamless-background-pattern-vector-5090368.jpg"
 side_bg_ext = "png"
 
 st.markdown(
