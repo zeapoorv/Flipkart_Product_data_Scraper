@@ -9,6 +9,20 @@ from streamlit import session_state as state
 st.markdown("<h2 style='text-align: center; background-color: #f2ef18; color: #16a3f5; padding: 8px; margin-bottom: 10px; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); font-family: Riona Sans Bold Italic ;'>Flipkart Scraper</h2>", unsafe_allow_html=True)
 st.write('##')
 
+# Initialize session state
+if 'urls' not in state:
+    state.urls = []
+num_urls = st.number_input("**Enter the number of URLs:**", value=len(state.urls) + 1, min_value=1, step=1)
+for i in range(num_urls):
+    url = st.text_input(f"**Enter URL {i+1}:**", key=f"url_{i}")
+    if st.button(f"Add URL {i+1}", key=f"add_{i}"):
+        if url and url not in state.urls:
+            state.urls.append(url)
+            st.success("URL added successfully.")
+        elif url in state.urls:
+            st.warning("URL already exists. Skipping...")
+        else:
+            st.warning("Please enter a valid URL.")
 
 #st.write("URLs entered:")
 #for url in state.urls:
