@@ -6,55 +6,12 @@ from urllib.parse import urlparse, parse_qs
 import streamlit as st
 from streamlit import session_state as state
 
-LOGO_IMAGE = "logo.png"
-
-st.markdown(
-    """
-    <style>
-    .container {
-        display: flex;
-    }
-    .logo-text {
-        font-weight:100 !important;
-        font-size:20px !important;
-        color: #16a3f5 !important;
-        padding: 8px !important;
-    }
-    .logo-img {
-        float:right;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
-st.markdown(
-    f"""
-    <div class="container">
-        <img class="logo-img" src="data:image/png;base64,{base64.b64encode(open(LOGO_IMAGE, "rb").read()).decode()}">
-        <p class="logo-text">Flipkart Scraper</p>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-
-# Initialize session state
-if 'urls' not in state:
-    state.urls = []
-
-num_urls = st.number_input("**Enter the number of URLs:**", value=len(state.urls) + 1, min_value=1, step=1)
-
-for i in range(num_urls):
-    url = st.text_input(f"**Enter URL {i+1}:**", key=f"url_{i}")
-
-    if st.button(f"Add URL {i+1}", key=f"add_{i}"):
-        if url and url not in state.urls:
-            state.urls.append(url)
-            st.success("URL added successfully.")
-        elif url in state.urls:
-            st.warning("URL already exists. Skipping...")
-        else:
-            st.warning("Please enter a valid URL.")
+col1,col2 = st.columns([2,5])
+with col1:
+    st.image("logo.png")
+wit col2:
+    st.markdown("<h2 style='text-align: center; background-color: #f2ef18; color: #16a3f5; padding: 8px; margin-bottom: 10px; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); font-family: Riona Sans Bold Italic ;'>Flipkart Scraper</h2>", unsafe_allow_html=True)
+st.write('##')
 
 #st.write("URLs entered:")
 #for url in state.urls:
