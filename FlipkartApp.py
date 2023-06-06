@@ -9,7 +9,7 @@ from streamlit import session_state as state
 col1,col2 = st.columns([2,5])
 with col1:
     st.image("logo.png")
-wit col2:
+with col2:
     st.markdown("<h2 style='text-align: center; background-color: #f2ef18; color: #16a3f5; padding: 8px; margin-bottom: 10px; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); font-family: Riona Sans Bold Italic ;'>Flipkart Scraper</h2>", unsafe_allow_html=True)
 st.write('##')
 
