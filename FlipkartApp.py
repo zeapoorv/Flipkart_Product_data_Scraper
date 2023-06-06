@@ -6,12 +6,38 @@ from urllib.parse import urlparse, parse_qs
 import streamlit as st
 from streamlit import session_state as state
 
-st.markdown("""<h2 style='text-align: center; background-color: #f2ef18; color: #16a3f5; padding: 8px; margin-bottom: 10px; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); font-family: Riona Sans Bold Italic ;'> 
-            <img src="logo.png" style ="width: 50px; height: 50px; margin-right: 10px;">
-            Flipkart Scraper
-            </h2>
-            """, unsafe_allow_html=True)
-st.write('##')
+LOGO_IMAGE = "logo.png"
+
+st.markdown(
+    """
+    <style>
+    .container {
+        display: flex;
+    }
+    .logo-text {
+        font-weight:100 !important;
+        font-size:20px !important;
+        color: #16a3f5 !important;
+        padding: 8px !important;
+    }
+    .logo-img {
+        float:right;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+st.markdown(
+    f"""
+    <div class="container">
+        <img class="logo-img" src="data:image/png;base64,{base64.b64encode(open(LOGO_IMAGE, "rb").read()).decode()}">
+        <p class="logo-text">Flipkart Scraper</p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 # Initialize session state
 if 'urls' not in state:
     state.urls = []
