@@ -6,20 +6,25 @@ from urllib.parse import urlparse, parse_qs
 import streamlit as st
 from streamlit import session_state as state
 
+main_bg = "bg.png"
+main_bg_ext = "png"
+
+side_bg = "bg.png"
+side_bg_ext = "png"
+
 st.markdown(
-    """
+    f"""
     <style>
-    .reportview-container {
-        background: url("https://thoughtoverdesign.com/wp-content/uploads/2017/12/section9.1.jpg")
-    }
-   .sidebar .sidebar-content {
-        background: url("https://thoughtoverdesign.com/wp-content/uploads/2017/12/section9.1.jpg")
-    }
+    .reportview-container {{
+        background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()})
+    }}
+   .sidebar .sidebar-content {{
+        background: url(data:image/{side_bg_ext};base64,{base64.b64encode(open(side_bg, "rb").read()).decode()})
+    }}
     </style>
     """,
     unsafe_allow_html=True
 )
-
 
 st.markdown("""
 <h1 style="display: flex; align-tems: center; justify-content: center; background-color: #F3F3DD; color: #047bd5; text-align: center; padding: 50px;">
