@@ -22,8 +22,7 @@ f"""
         background: url(data:image/{side_bg_ext};base64,{base64.b64encode(open(side_bg, "rb").read()).decode()})
     }}
     </style>
-""",
-"""
+    
 <h1 style="display: flex; align-tems: center; justify-content: center; background-color: #F3F3DD; color: #047bd5; text-align: center; padding: 50px;">
 <img src="https://www.freepnglogos.com/uploads/flipkart-logo-png/flipkart-inventory-management-system-zap-inventory-1.png" style="width: 60px; height:60px; margin-right:10px;"> Flipkart Scraper
 </h1>
