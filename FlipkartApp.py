@@ -6,7 +6,7 @@ from urllib.parse import urlparse, parse_qs
 import streamlit as st
 from streamlit import session_state as state
 
-st.markdown("<h2 style='text-align: center; background-color: #f1f1f1; color: #035689; padding: 8px; margin-bottom: 10px; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); font-family: Georgia;'>**Scraping Tool**</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center; background-color: #f1f1f1; color: #035689; padding: 8px; margin-bottom: 10px; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); font-family: Georgia;'>Flipkart Scraper</h2>", unsafe_allow_html=True)
 st.write('##')
 # Initialize session state
 if 'urls' not in state:
