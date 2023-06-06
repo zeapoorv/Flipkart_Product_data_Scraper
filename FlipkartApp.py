@@ -10,10 +10,10 @@ st.markdown(
     """
     <style>
     .reportview-container {
-        background: url("https://thoughtoverdesign.com/wp-content/uploads/2017/12/flipkart_section7right.jpg")
+        background: url("https://thoughtoverdesign.com/wp-content/uploads/2017/12/section9.1.jpg")
     }
    .sidebar .sidebar-content {
-        background: url("https://thoughtoverdesign.com/wp-content/uploads/2017/12/flipkart_section7right.jpg")
+        background: url("https://thoughtoverdesign.com/wp-content/uploads/2017/12/section9.1.jpg")
     }
     </style>
     """,
