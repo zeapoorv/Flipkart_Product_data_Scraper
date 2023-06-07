@@ -17,10 +17,11 @@ filter: blur(20px);
 """
 
 st.markdown("""
+page_bg,
 <h1 style="display: flex; align-tems: center; justify-content: center; background-color: #F3F3DD; color: #047bd5; text-align: center; padding: 20px;">
 <img src="https://www.freepnglogos.com/uploads/flipkart-logo-png/flipkart-inventory-management-system-zap-inventory-1.png" style="width: 40px; height:40px; margin-right:10px;"> Flipkart Scraper
 </h1>
-""", page_bg, unsafe_allow_html=True)
+""", unsafe_allow_html=True)
 
 # Initialize session state
 if 'urls' not in state:
