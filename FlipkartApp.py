@@ -23,6 +23,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Initialize session state
+
 if 'urls' not in state:
     state.urls = []
 num_urls = st.number_input("**Enter the number of URLs:**", value=len(state.urls) + 1, min_value=1, step=1)
@@ -128,7 +129,7 @@ if data:
     csv = df.to_csv(index=False)
     b64 = base64.b64encode(csv.encode()).decode()
     button_label = "Download Data"
-    button_text = f'<a href="data:file/csv;base64,{b64}" download="data.csv"><button style="background-color: #F8E831; color: #035689; border: 2px solid #035689;">{button_label}</button></a>'
+    button_text = f'<a href="data:file/csv;base64,{b64}" download="data.csv"><button style="background-color: white; color: #035689; border: 2px solid #035689;">{button_label}</button></a>'
     st.markdown(button_text, unsafe_allow_html=True)
 else:
     st.markdown(f'<h1 style="color:#F8E831;font-size:18px;">{"No data available."}</h1>', unsafe_allow_html=True)
