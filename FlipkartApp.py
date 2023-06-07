@@ -131,7 +131,7 @@ if data:
     button_text = f'<a href="data:file/csv;base64,{b64}" download="data.csv"><button style="background-color: white; color: #035689; border: 2px solid #035689;">{button_label}</button></a>'
     st.markdown(button_text, unsafe_allow_html=True)
 else:
-    st.markdown(f'<h1 style="color:#33ff33;font-size:24px;">{"No data available. text”"}</h1>', unsafe_allow_html=True)
+    st.markdown(f'<h1 style="color:#F8E831;font-size:18px;">{"No data available."}</h1>', unsafe_allow_html=True)
     
     
     
