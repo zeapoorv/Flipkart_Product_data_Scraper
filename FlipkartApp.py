@@ -9,18 +9,17 @@ from streamlit import session_state as state
 page_bg = """
 <style>
 [data-testid="stAppViewContainer"]{
-background-color: #e5e5f7;
-opacityL 0.2;
-filter: blur(20px);
+background-image: url("https://cdn.pixabay.com/photo/2015/12/03/08/50/paper-1074131_1280.jpg");
+background-size: cover;
 }
 </style>
 """
 
-st.markdown(page_bg,"""
+st.markdown("""
 <h1 style="display: flex; align-tems: center; justify-content: center; background-color: #F3F3DD; color: #047bd5; text-align: center; padding: 20px;">
 <img src="https://www.freepnglogos.com/uploads/flipkart-logo-png/flipkart-inventory-management-system-zap-inventory-1.png" style="width: 40px; height:40px; margin-right:10px;"> Flipkart Scraper
 </h1>
-""", unsafe_allow_html=True)
+""",page_bg, unsafe_allow_html=True)
 
 # Initialize session state
 if 'urls' not in state:
