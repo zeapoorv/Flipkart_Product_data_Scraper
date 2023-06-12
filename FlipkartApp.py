@@ -17,7 +17,7 @@ background-size: cover;
 
 st.markdown(page_bg, unsafe_allow_html=True)
 st.markdown("""
-<h1 style="display: flex; align-tems: center; justify-content: center; color: #047bd5; text-align: center; padding: 10px;">
+<h1 style="display: flex; align-tems: center; justify-content: center; color: #047bd5; text-align: center; padding: 20px;">
 <img src="https://seeklogo.com/images/F/flipkart-logo-3F33927DAA-seeklogo.com.png" style="width: 50px; height:50px; margin-right:10px;"> Flipkart Scraper
 </h1>
 """, unsafe_allow_html=True)
@@ -132,7 +132,7 @@ if data:
     button_text = f'<a href="data:file/csv;base64,{b64}" download="data.csv"><button style="background-color: white; color: #035689; border: 2px solid #035689;">{button_label}</button></a>'
     st.markdown(button_text, unsafe_allow_html=True)
 else:
-    st.markdown(f'<h1 style="color:#F8E831;font-size:18px;">{"No data available."}</h1>', unsafe_allow_html=True)
+    st.markdown(f'<h1 style="color:black; font-size:18px;">{"No data available."}</h1>', unsafe_allow_html=True)
     
     
     
