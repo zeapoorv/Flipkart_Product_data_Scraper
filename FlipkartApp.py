@@ -18,7 +18,7 @@ background-size: cover;
 st.markdown(page_bg, unsafe_allow_html=True)
 st.markdown("""
 <h1 style="display: flex; align-tems: center; justify-content: center; color: #047bd5; text-align: center; padding: 20px;">
-<img src="https://seeklogo.com/images/F/flipkart-logo-3F33927DAA-seeklogo.com.png" style="width: 50px; height:50px; margin-right:10px;"> Flipkart Scraper
+<img src="https://github.com/zeapoorv/Flipkart_Product_data_Scraper/blob/main/logo.png" style="width: 50px; height:50px; margin-right:10px;"> Flipkart Scraper
 </h1>
 """, unsafe_allow_html=True)
 
