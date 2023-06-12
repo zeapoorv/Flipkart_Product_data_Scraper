@@ -9,7 +9,7 @@ from streamlit import session_state as state
 page_bg = """
 <style>
 [data-testid="stAppViewContainer"]{
-background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yNjMtYWRqLTQ0XzEuanBn.jpg");
+background-image: url("https://www.pixelstalk.net/wp-content/uploads/images5/4K-White-Wallpaper-3840x2160-1.jpg");
 background-size: cover;
 }
 </style>
@@ -18,7 +18,7 @@ background-size: cover;
 st.markdown(page_bg, unsafe_allow_html=True)
 st.markdown("""
 <h1 style="display: flex; align-tems: center; justify-content: center; color: #047bd5; text-align: center; padding: 10px;">
-<img src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yNjMtYWRqLTQ0XzEuanBn.jpg" style="width: 30px; height:30px; margin-right:10px;"> Flipkart Scraper
+<img src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yNjMtYWRqLTQ0XzEuanBn.jpghttps://www.freepnglogos.com/uploads/flipkart-logo-png/flipkart-logo-transparent-png-download-0.png" style="width: 30px; height:30px; margin-right:10px;"> Flipkart Scraper
 </h1>
 """, unsafe_allow_html=True)
 
