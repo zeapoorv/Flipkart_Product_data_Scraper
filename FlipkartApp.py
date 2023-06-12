@@ -9,7 +9,7 @@ from streamlit import session_state as state
 page_bg = """
 <style>
 [data-testid="stAppViewContainer"]{
-background-image: url("https://images.pexels.com/photos/4505462/pexels-photo-4505462.jpeg");
+background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yNjMtYWRqLTQ0XzEuanBn.jpg");
 background-size: cover;
 }
 </style>
